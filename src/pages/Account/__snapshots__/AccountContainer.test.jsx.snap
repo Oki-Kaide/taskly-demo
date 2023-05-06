@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountContainer component matches the rendered snapshot 1`] = `
+<Account
+  accountData={Object {}}
+  completedTasks={
+    Array [
+      "Filed your tax return",
+      "Organized all your contacts",
+      "Contact DMV about updating tags",
+      "Sent a request to your building manager",
+    ]
+  }
+  logout={[MockFunction]}
+  openConfirmModal={[Function]}
+/>
+`;

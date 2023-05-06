@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedButton component matches the rendered snapshot 1`] = `
+<button
+  className="red-button undefined"
+  onClick={[Function]}
+  type="button"
+>
+  <span>
+    button text
+  </span>
+</button>
+`;

@@ -1,0 +1,19 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: taskly-demo-cert
+  namespace: default
+spec:
+  secretName: taskly-demo-cert
+  issuerRef:
+    name: taskly-demo-issuer
+    kind: ClusterIssuer
+  commonName: taskly.protonchain.com
+  dnsNames:
+  - taskly.protonchain.com
+  acme:
+    config:
+    - http01:
+        ingress: taskly-demo-ssl-ingress
+      domains:
+      - taskly.protonchain.com

@@ -1,0 +1,35 @@
+@import '../../styles/variables.sass'
+@import '../../styles/mixins.sass'
+
+.main
+  display: flex
+  flex-direction: column
+  justify-content: center
+  @include for-phone-only
+    min-height: calc(100% - #{$top-header-margin} - #{$top-header-height} - #{$app-store-badge-height})
+  @include for-tablet-portrait-up
+    min-height: calc(100% - #{$top-header-margin} - #{$top-header-height} - #{$app-store-badge-height})
+  @include for-tablet-portrait-landscape-up
+    width: 332px
+  @include for-tablet-landscape-up
+    width: 400px
+
+  h1
+    margin-bottom: 50px
+
+  .app-store-badges
+    img
+      width: 130px
+
+      &:first-of-type 
+        margin-right: 10px
+    @include for-phone-only
+      margin-top: 20px
+    @include for-tablet-portrait-up
+      margin-top: 120px
+    @include for-tablet-portrait-landscape-up
+      margin-top: 200px
+    @include for-tablet-landscape-up
+      position: fixed
+      bottom: 40px
+

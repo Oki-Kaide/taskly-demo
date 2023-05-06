@@ -1,0 +1,30 @@
+@import '../../styles/variables.sass'
+@import '../../styles/mixins.sass'
+
+.content-wrapper,
+.content
+  display: flex
+  flex-direction: column
+
+.content-wrapper
+  @include for-tablet-portrait-up
+    position: fixed
+    top: -20px
+    width: calc(100vw - 120px)
+    max-width: 1218px
+    align-items: flex-end
+    height: 100vh
+  @include for-phone-only
+    margin-top: 10px
+    padding-bottom: 30px
+
+.content
+  justify-content: center
+  height: 100%
+  @include for-tablet-portrait-landscape-up
+    width: 332px
+  @include for-tablet-landscape-up
+    width: 400px
+
+  h1
+    margin-bottom: 10px

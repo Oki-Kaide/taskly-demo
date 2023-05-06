@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoggedInLayout component matches the rendered snapshot if windowWidth is greater than 700 1`] = `
+<div
+  className="page"
+>
+  <div
+    className="page-wrapper"
+  >
+    <div
+      className="header"
+    >
+      <img
+        alt="Taskly"
+        src="./images/taskly-logo-white.svg"
+      />
+      <div
+        alt="avatar"
+        className="header-avatar"
+        onClick={[MockFunction]}
+        style={
+          Object {
+            "backgroundImage": "url('./images/default-avatar.png')",
+          }
+        }
+      />
+    </div>
+    <div
+      className="content-wrapper"
+    >
+      <div
+        className="content"
+      >
+        <div />
+        <RedBackground
+          bottom="-5px"
+          left="auto"
+          right="auto"
+          side="left"
+          top="auto"
+        >
+          <img
+            alt="Smiling"
+            className="account-image"
+            src="./images/smiling-girl-bust.png"
+          />
+        </RedBackground>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`LoggedInLayout component matches the rendered snapshot if windowWidth is less than 700 1`] = `
+<div
+  className="page"
+>
+  <div
+    className="page-wrapper"
+  >
+    <div
+      className="header"
+    >
+      <img
+        alt="Taskly"
+        src="./images/taskly-logo.svg"
+      />
+      <div
+        alt="avatar"
+        className="header-avatar"
+        onClick={[MockFunction]}
+        style={
+          Object {
+            "backgroundImage": "url('./images/default-avatar.png')",
+          }
+        }
+      />
+    </div>
+    <div
+      className="content-wrapper"
+    >
+      <div
+        className="content"
+      >
+        <div />
+        <RedBackground
+          bottom="-5px"
+          left="auto"
+          right="auto"
+          side="left"
+          top="auto"
+        >
+          <img
+            alt="Smiling"
+            className="account-image"
+            src="./images/smiling-girl-bust.png"
+          />
+        </RedBackground>
+      </div>
+    </div>
+  </div>
+</div>
+`;

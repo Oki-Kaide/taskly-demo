@@ -1,0 +1,35 @@
+@import '../../styles/variables.sass'
+@import '../../styles/mixins.sass'
+
+.red-image
+  position: fixed
+  top: 0
+  height: 100vh
+  background-color: $taskly-red
+  content: ''
+  @include for-phone-only
+    display: none
+  @include for-tablet-portrait-up
+    display: none
+  @include for-tablet-portrait-landscape-up
+    width: 40%
+    display: unset
+  @include for-tablet-landscape-up
+    width: calc(100vw / 2)
+    display: unset
+
+
+  &.right
+    border-top-left-radius: 100px
+    border-bottom-left-radius: 100px
+    right: 0
+
+  &.left
+    border-top-right-radius: 100px
+    border-bottom-right-radius: 100px
+    left: 0
+  
+  .red-image-content
+    position: fixed
+    img
+      width: calc(100vw / 2)

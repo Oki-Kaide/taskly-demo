@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TasksContainer component matches the rendered snapshot 1`] = `
+<Tasks
+  accountData={
+    Object {
+      "avatar": "",
+      "name": "test",
+    }
+  }
+  logout={[MockFunction]}
+/>
+`;

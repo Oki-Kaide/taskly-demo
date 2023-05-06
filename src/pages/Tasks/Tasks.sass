@@ -1,0 +1,27 @@
+@import '../../styles/variables.sass'
+
+.task-item
+  outline: 0
+  border: none
+  border-bottom: 1px solid $taskly-red
+  height: 30px
+  line-height: 21px
+  font-size: 14px
+  &::placeholder
+    font-family: CircularStd
+  &:-ms-input-placeholder
+    font-family: CircularStd
+  &::-ms-input-placeholder
+    font-family: CircularStd
+.add-task
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 22px
+  cursor: pointer
+.finish-button
+  display: flex
+  flex-direction: row
+  justify-content: center
+  width: 100%
+  margin-top: 50px

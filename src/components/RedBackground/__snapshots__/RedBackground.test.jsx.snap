@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedBackground component matches the rendered snapshot 1`] = `
+<div
+  className="red-image left"
+>
+  <div
+    className="red-image-content left"
+    style={
+      Object {
+        "bottom": "10px",
+        "left": "25px",
+        "right": "50px",
+        "top": "10px",
+      }
+    }
+  >
+    <div />
+  </div>
+</div>
+`;

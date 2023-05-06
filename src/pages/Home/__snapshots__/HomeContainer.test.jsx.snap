@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeContainer component matches the rendered snapshot 1`] = `
+<Home
+  openLoginModal={[Function]}
+  windowWidth={1024}
+/>
+`;

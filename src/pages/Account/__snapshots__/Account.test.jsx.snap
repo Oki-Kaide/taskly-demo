@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Account component matches the rendered snapshot 1`] = `
+<LoggedInLayout
+  avatar=""
+  logout={[MockFunction]}
+  mainImageUrl="./images/smiling-girl-bust.png"
+  openConfirmModal={null}
+>
+  <h1>
+    Welcome back 
+    test
+    .
+  </h1>
+  <div
+    className="description"
+  >
+    We are proud to say that we have completed all the tasks you requested. If you wish to continue using our service, please purchase another month.
+  </div>
+  <CompletedTask
+    key="0"
+    text="task 1"
+  />
+  <CompletedTask
+    key="1"
+    text="task 2"
+  />
+  <RedButton
+    className="pay-button"
+    handleOnClick={[MockFunction]}
+    isLoading={false}
+    text="1 month of service"
+    text2="5 FOOBAR"
+  />
+</LoggedInLayout>
+`;

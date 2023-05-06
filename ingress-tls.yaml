@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: taskly-demo-backend
+  labels:
+    app: taskly-demo
+spec:
+  type: NodePort
+  selector:
+    app: taskly-demo
+    tier: web
+  ports:
+  - port: 3000
+    targetPort: 3000
+---  
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: taskly-demo-ssl-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: taskly-demo-issuer
+  labels:
+    app: taskly-demo
+spec:
+  tls:
+  - secretName: taskly-demo-cert
+    hosts:
+    - taskly.protonchain.com
+  rules:
+  - host: taskly.protonchain.com
+    http:
+      paths:
+      - backend:
+          serviceName: taskly-demo-backend
+          servicePort: 3000
+        path: /

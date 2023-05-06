@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckIcon component matches the rendered snapshot 1`] = `
+<svg
+  height="14px"
+  version="1.1"
+  viewBox="0 0 18 14"
+  width="18px"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    fill="none"
+    fillRule="evenodd"
+    id="Page-1"
+    stroke="none"
+    strokeWidth="1"
+  >
+    <g
+      id="Website-03"
+      transform="translate(-763.000000, -362.000000)"
+    >
+      <g
+        id="Group-5"
+        transform="translate(760.000000, 40.000000)"
+      >
+        <g
+          id="Group-6"
+          transform="translate(0.000000, 100.000000)"
+        >
+          <polygon
+            id="Path"
+            points="0 217 24 217 24 241 0 241"
+          />
+          <polygon
+            fill="#FF3339"
+            fillRule="nonzero"
+            id="Path"
+            points="9 233.17 4.83 229 3.41 230.41 9 236 21 224 19.59 222.59"
+          />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+`;
+
+exports[`CompletedTask component matches the rendered snapshot 1`] = `
+<div
+  className="completed-task"
+>
+  <CheckIcon />
+  <span>
+    test
+  </span>
+</div>
+`;

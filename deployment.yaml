@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taskly-demo
+  labels:
+    app: taskly-demo
+spec:
+  selector:
+    matchLabels:
+      app: taskly-demo
+  template:
+    metadata:
+      labels:
+        app: taskly-demo
+        tier: web
+    spec:
+      containers:
+      - name: taskly-demo
+        image: gcr.io/proton-wallet/proton-taskly-demo
+        ports:
+          - name: http
+            containerPort: 3000
+            protocol: TCP
+        livenessProbe:
+          httpGet:
+            host:
+            path: /
+            port: http
+        readinessProbe:
+          httpGet:
+            host:
+            path: /
+            port: http

@@ -1,0 +1,17 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: taskly-demo-issuer
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: cindy@metalpay.co
+    privateKeySecretRef:
+      name:  taskly-demo-cert
+    http01: {}
+    solvers:
+      - selector: {}
+        http01:
+          ingress:
+            class: nginx
+  
